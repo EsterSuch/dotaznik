@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '../Icon/index';
+
 import './style.css';
 
 
@@ -9,7 +9,7 @@ const QuestionBody = ({ text, iconType }) => (
     <p className="question__text">
       {text}
     </p>
-    <Icon type={iconType === true ? `symbolTick` : `symbolQuestion`} />
+    type={iconType}
   </div>
 );
 

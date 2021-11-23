@@ -3,7 +3,7 @@ import './style.css';
 
 const SmileyContent = ({ type }) => {
   let d = null;
-  
+
   if (type === 'smileyYes') {
     d = 'M 141.62986,124.11544 A 48.216164,48.216179 0 0 1 99.873435,148.22353 48.216164,48.216179 0 0 1 58.117013,124.11544';
   } else if (type === 'smileyStrongYes') {
@@ -44,14 +44,14 @@ const SymbolContent = ({ type }) => {
 
   if (type === 'symbolTick') {
     return (
-      <path 
+      <path
         fill="none"
         strokeWidth="8"
         d="M 57.141863,94.671752 89.285972,126.81586 142.85949,73.242346"
       />
     )
   }
-  
+
   return null;
 };
 
@@ -67,7 +67,7 @@ const Icon = ({ type }) => {
   return (
     <svg className="icon" viewBox="0 0 200 200">
       <circle className="icon__circle" cx="100" cy="100" r="85" />
-      { content }
+      {content}
     </svg>
   );
 };
